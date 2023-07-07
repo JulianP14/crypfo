@@ -6,7 +6,7 @@ const MarketUpdate = () => {
             <p>Coin</p>
             <p>Price</p>
             <p>24hs Change</p>
-            <p>Market Cap</p>
+            <p>Total Value Binance</p>
         </div>
     )
 }

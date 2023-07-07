@@ -50,10 +50,6 @@ const Main1 = () => {
                     OF THE MAIN CRYPTOS
                 </h2>
             </div>
-            <section>
-                <p>La cripto es</p>
-                <p> </p>
-            </section>
         </div>
     )
 }

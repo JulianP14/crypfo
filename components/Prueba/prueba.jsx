@@ -7,11 +7,15 @@ import MarketUpdate from './MarketUpdate';
 const Prueba = () => {
     const [criptos, setCriptos] = useState([]);
 
+
+
+
+
     /* BINANCE PRUEBA */
     const dataBinances = async () => {
         const tickersDeseados = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'XRPUSDT', 'ADAUSDT', 'DOGEUSDT', 'SOLUSDT', 'LTCUSDT', 'TRXUSDT', 'MATICUSDT'];
 
-        const binance = await fetch('https://api.binance.com/api/v3/ticker/price');
+        const binance = await fetch('https://api.binance.com/api/v3/ticker/24hr');
         const resp = await binance.json();
         const filter = resp.filter((ele) => tickersDeseados.includes(ele.symbol))
         setCriptos(filter);
@@ -28,28 +32,11 @@ const Prueba = () => {
         };
     }, []);
 
-
-    /* BINANCE 2 VOL. PRUEBA */
-    // const dataBinanceVolume = async () => {
-    //     try {
-    //         const binance = await fetch('https://api.binance.com/api/v3/ticker/24hr');
-    //         const resp = await binance.json();
-    //         /* console.log(resp) */
-    //         const filtro = resp.filter((el) => {
-    //             return el.symbol === 'BTCUSDT'
-    //         })
-
-    //         /* console.log(filtro[0]) */
-
-    //     } catch (error) {
-    //         console.log(`Error: ${error}`)
-    //     }
-
-    // }
-
-    // dataBinanceVolume()
-
-
+    /* VALIDACION PORCENTAJE COLORES */
+    // Uso de una clase dinamica para chequear si es un valor u otro
+    const getPriceChangeClass = (priceChangePercent) => {
+        return priceChangePercent < 0 ? 'text-red-500' : 'text-green-500' 
+    };
 
     return (
         <>
@@ -68,7 +55,19 @@ const Prueba = () => {
                             key={index}
                             className='p-5'
                         >
-                            {cripto.symbol}: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(cripto.price)}
+                            {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(cripto.askPrice)}
+                        </p>
+
+                        <p
+                        // Llamado a la clase dinamica para chequear el valor
+                        className={getPriceChangeClass(cripto.priceChangePercent)}
+                        >
+                            {`${Number(cripto.priceChangePercent).toFixed(2)}%`}
+                        </p>
+
+
+                        <p>
+                            {`${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(Number(cripto.volume * cripto.askPrice))}`}
                         </p>
                     </section>
                 ))}

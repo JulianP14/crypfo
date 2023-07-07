@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className=' bg-gradient-to-b from-blue-bg to-red-500 crypfo__main'>
+    <main className=' bg-gradient-to-b from-blue-bg to-red-800 crypfo__main'>
       <Navbar />
       <Main1 />
       <Prueba />
