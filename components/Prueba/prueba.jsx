@@ -8,9 +8,6 @@ const Prueba = () => {
     const [criptos, setCriptos] = useState([]);
 
 
-
-
-
     /* BINANCE PRUEBA */
     const dataBinances = async () => {
         const tickersDeseados = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'XRPUSDT', 'ADAUSDT', 'DOGEUSDT', 'SOLUSDT', 'LTCUSDT', 'TRXUSDT', 'MATICUSDT'];
@@ -41,15 +38,15 @@ const Prueba = () => {
     return (
         <>
             <MarketUpdate />
-            <div className='flex-column align-center text-center pt-3 bg-black-400 border-4 border-zinc-300 mr-10 ml-10' id='market'>
+            <div className='flex-column align-center text-center pt-3 bg-black-400 mx-80' id='market'>
                 {criptos.map((cripto, index) => (
-                    <section key={index} className='w-full flex justify-around'>
+                    <section key={index} className='w-full flex justify-around items-center py-4 border-b-2'>
                         <Image
                             src={`/images/${cripto.symbol}.svg`}
                             alt={`${cripto.symbol}`}
-                            width={65}
+                            width={50}
                             height={50}
-                            className='border-2 '
+                            className='bg-white rounded-full p-1'
                         />
                         <p
                             key={index}

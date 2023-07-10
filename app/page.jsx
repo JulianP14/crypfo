@@ -1,3 +1,4 @@
+import CryptoSearch from '@/components/CryptoSearch/CryptoSearch'
 import Main1 from '@/components/Main1.jsx/Main1'
 import Main2 from '@/components/Main2/Main2'
 import Navbar from '@/components/Navbar/Navbar'
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Main1 />
       <Prueba />
+      <CryptoSearch />
       <Main2 />
     </main>
   )
