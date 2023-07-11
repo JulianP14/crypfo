@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-bg' : '#130749'
+        'blue-bg' : '#130749',
+        'cards-bg': '#190507'
+      },
+      maxWidth: {
+        'svgSize': '50px'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -29,6 +29,14 @@ const CryptoSearch = () => {
 
     return (
         <>
+            <div className='flex flex-col items-center flex-wrap mt-10'>
+                <h2 className='text-3xl '>
+                    Buscar Criptomonedas
+                </h2>
+                <p>
+                    Si la cripto que buscas no está en la lista, escribí su ticker acá:
+                </p>
+            </div>
             <div className='flex justify-center mt-10 '>
                 <input
                     type='text'
@@ -36,7 +44,7 @@ const CryptoSearch = () => {
                         setSearchValue(e.target.value)
                     }}
                     value={searchValue}
-                    className='text-black rounded-full mr-2 py-2 border-zin-950 px-10'
+                    className='text-black rounded-full mr-2 py-2 border-zin-950 pr-10 pl-2'
                 />
                 <button
                     onClick={() => {

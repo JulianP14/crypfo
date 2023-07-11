@@ -3,30 +3,76 @@ import Image from 'next/image'
 
 const Main2 = () => {
     return (
-        <div className='px-10'>
+        <section className='px-10'>
             <div className='text-center font-bold text-3xl pt-10 flex justify-center pt-20'>
                 <h1 className='w-1/3 rounded-full text-white p-1 mb-10'>
-                    POR QUÉ ELEGIRNOS
+                    WHY CHOOSING US:
                 </h1>
             </div>
-            <div className='flex justify-evenly '>
-                <section className='bg-gradient-to-b from-blue-bg to-red-700 '>
-                    <div className='border-2 border-zinc-200 flex pt-5 pb-5 '>
-                        <div>
-                            <h3>Watch The Market</h3>
-                            <p>Watch the price from the 10 most important crypto coins directly from the biggest broker.</p>
+            <section className='flex justify-evenly px-20'>
+                <div className='max-w-md'>
+                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
+                        <div className='mx-5'>
+                            <Image
+                                src={'/images/trading.svg'}
+                                alt='wallet img'
+                                width={100}
+                                height={100}
+                                className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
+                            />
                         </div>
+                        <div className='pr-1'>
+                            <h3 className='text-3xl uppercase'>
+                                Watch The Market
+                            </h3>
+                            <p>
+                                Watch the price from the 10 most important crypto coins directly from the biggest broker.
+                            </p>
+                        </div>
+                    </div>
 
+                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
+                        <div className='mx-5'>
+                            <Image
+                                src={'/images/search.svg'}
+                                alt='wallet img'
+                                width={100}
+                                height={100}
+                                className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
+                            />
+                        </div>
+                        <div className='pr-1'>
+                            <h3 className='text-3xl uppercase'>
+                                Search Cryptos
+                            </h3>
+                            <p>
+                                If you want to look for another Crypto that is not in the main list, you can search it above.
+                            </p>
+                        </div>
                     </div>
-                    <div className='border-2 border-zinc-200'>
-                        <h3>Save Info In Your Account</h3>
-                    </div>
-                    <div className='border-2 border-zinc-200'>
-                        <h3>Share Your Thoughts</h3>
-                    </div>
-                </section>
 
-                <div>
+                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
+                        <div className='mx-5'>
+                            <Image
+                                src={'/images/trading.svg'}
+                                alt='wallet img'
+                                width={100}
+                                height={100}
+                                className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
+                            />
+                        </div>
+                        <div className='pr-1'>
+                            <h3 className='text-3xl uppercase'>
+                                Watch The Market
+                            </h3>
+                            <p>
+                                Watch the price from the 10 most important crypto coins directly from the biggest broker.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex items-center' >
                     <Image
                         src={'/images/handcrypto.png'}
                         alt='logo'
@@ -36,28 +82,71 @@ const Main2 = () => {
                     />
                 </div>
 
-                <section className='bg-gradient-to-b from-blue-bg to-red-700'>
-                    <div className='border-2 border-zinc-200'>
-                        <div>
+                <div className='max-w-md'>
+
+                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
+                        <div className='mx-5'>
                             <Image
-                                src={'/images/ADAUSDT.svg'}
-                                alt='logo'
-                                width={20}
-                                height={20}
+                                src={'/images/account.svg'}
+                                alt='wallet img'
+                                width={100}
+                                height={100}
+                                className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
                             />
-                            <h3>Watch The Market</h3>
-                            <p>Watch the price from the 10 most important crypto coins directly from the biggest broker.</p>
+                        </div>
+                        <div className='pr-1'>
+                            <h3 className='text-3xl uppercase'>
+                                Log-in
+                            </h3>
+                            <p>
+                                Log-in into your account and save your favorites Cryptos and keep track of them.
+                            </p>
                         </div>
                     </div>
-                    <div className='border-2 border-zinc-200'>
-                        <h3>Save Info In Your Account</h3>
+
+                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
+                        <div className='mx-5'>
+                            <Image
+                                src={'/images/wallet.svg'}
+                                alt='wallet img'
+                                width={100}
+                                height={100}
+                                className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
+                            />
+                        </div>
+                        <div className='pr-1'>
+                            <h3 className='text-3xl uppercase'>
+                                Buy and Sell
+                            </h3>
+                            <p>
+                                Soon we will launch our own broker APP exclusively for registered accounts.
+                            </p>
+                        </div>
                     </div>
-                    <div className='border-2 border-zinc-200'>
-                        <h3>Share Your Thoughts</h3>
+
+                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
+                        <div className='mx-5'>
+                            <Image
+                                src={'/images/message.svg'}
+                                alt='wallet img'
+                                width={100}
+                                height={100}
+                                className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
+                            />
+                        </div>
+                        <div className='pr-1'>
+                            <h3 className='text-3xl uppercase'>
+                                Comment & Discuss
+                            </h3>
+                            <p>
+                                Join the Crypfo community and discuss, talk and have a good time while you are around.
+                            </p>
+                        </div>
                     </div>
-                </section>
-            </div>
-        </div>
+
+                </div>
+            </section>
+        </section>
     )
 }
 
