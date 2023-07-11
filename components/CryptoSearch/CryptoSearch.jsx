@@ -2,6 +2,11 @@
 import { useState } from 'react'
 import Image from 'next/image';
 
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
+
 
 const CryptoSearch = () => {
     const [criptos, setCriptos] = useState([]);
@@ -14,13 +19,15 @@ const CryptoSearch = () => {
         setCriptos(resp);
 
         const filteredCriptos = criptos.filter((element) => element.symbol === `${searchValue.toUpperCase()}USDT`);
+
+        filteredCriptos.length == 0 && MySwal.fire({
+            title: <p>Error: <hr/></p>,
+            text: "La Criptomoneda ingresada es incorrecta.",
+            icon: 'error',
+        })
+        
         setFilteredCrypto(filteredCriptos);
     };
-
-
-    const cleanInput = () => {
-        setSearchValue('');
-    }
 
     const getPriceChangeClass = (priceChangePercent) => {
         return priceChangePercent < 0 ? 'text-red-500' : 'text-green-500'
@@ -50,8 +57,6 @@ const CryptoSearch = () => {
                 <button
                     onClick={() => {
                         dataBinances();
-                        // await searchCrypto();
-                        // await cleanInput();
                     }}
                     className=' bg-blue-bg border-white hover:bg-red-800 text-white font-bold py-2 px-6 border-b-4 border-blue-700 hover:border-white rounded transition duration-300 rounded-full'
                 >
@@ -65,7 +70,7 @@ const CryptoSearch = () => {
                         className='flex align-center justify-center py-2 px-5 my-5 max-w-xs text-xl bg-gradient-to-b from-blue-bg to-violet-bg rounded-xl border-2'
                     >
                         <p>
-                            {data.symbol}
+                            {data.symbol.replace('USDT', ':')}
                         </p>
                         <p className='px-5'>
                             {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: data.askPrice % 1 !== 0 & data.askPrice < cero ? 6 : 2 }).format(data.askPrice)}
