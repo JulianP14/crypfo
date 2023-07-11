@@ -5,8 +5,8 @@ import Link from 'next/link'
 const NavbarDesktop = ({ }) => {
 
     return (
-        <nav className='flex justify-evenly pt-3 font-bold  text-xl uppercase text-white'>
-            {/* Desktop Nav */}
+        <nav className='flex justify-evenly pt-3 font-bold  text-xl uppercase text-white sticky top-0 bg-blue-bg pb-5'>
+            {/* Desktop Nav */} 
             <section className='text-2xl bg-gradient-to-r from-red-700 to-blue-700 text-transparent bg-clip-text '>
                 Crypfo
                 {/* <Image 
@@ -25,6 +25,11 @@ const NavbarDesktop = ({ }) => {
                 <Link href={'#market'}>
                     <li className='pl-10 pt-1 text-red-500 hover:text-white transition duration-300'>
                         The Market
+                    </li>
+                </Link>
+                <Link href={'#search'}>
+                    <li className='pl-10 pt-1 text-red-500 hover:text-white transition duration-300'>
+                        Search
                     </li>
                 </Link>
                 <li className='pl-10 pt-1 text-red-500 hover:text-white transition duration-300'>

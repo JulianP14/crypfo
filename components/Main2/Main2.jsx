@@ -6,7 +6,7 @@ const Main2 = () => {
         <section className='px-10'>
             <div className='text-center font-bold text-3xl pt-10 flex justify-center pt-20'>
                 <h1 className='w-1/3 rounded-full text-white p-1 mb-10'>
-                    WHY CHOOSING US:
+                    WHY CHOOSE US:
                 </h1>
             </div>
             <section className='flex justify-evenly px-20'>
@@ -54,7 +54,7 @@ const Main2 = () => {
                     <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
                         <div className='mx-5'>
                             <Image
-                                src={'/images/trading.svg'}
+                                src={'/images/token.svg'}
                                 alt='wallet img'
                                 width={100}
                                 height={100}
@@ -63,10 +63,10 @@ const Main2 = () => {
                         </div>
                         <div className='pr-1'>
                             <h3 className='text-3xl uppercase'>
-                                Watch The Market
+                                Reliable Information
                             </h3>
                             <p>
-                                Watch the price from the 10 most important crypto coins directly from the biggest broker.
+                                The data used is provided by the biggest cryptocurrencies broker. Any information display is %100 valid
                             </p>
                         </div>
                     </div>

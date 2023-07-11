@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'blue-bg' : '#130749',
+        'violet-bg': '#430e38',
         'cards-bg': '#190507'
       },
       maxWidth: {

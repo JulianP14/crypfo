@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image';
 
 
 const CryptoSearch = () => {
@@ -29,12 +30,12 @@ const CryptoSearch = () => {
 
     return (
         <>
-            <div className='flex flex-col items-center flex-wrap mt-10'>
+            <div className='flex flex-col items-center flex-wrap mt-10' id='search'>
                 <h2 className='text-3xl '>
-                    Buscar Criptomonedas
+                    SEARCH CRYPTOS
                 </h2>
                 <p>
-                    Si la cripto que buscas no está en la lista, escribí su ticker acá:
+                    If the Crypto you are looking for is not in the list, try searching it down below.
                 </p>
             </div>
             <div className='flex justify-center mt-10 '>
@@ -52,21 +53,21 @@ const CryptoSearch = () => {
                         // await searchCrypto();
                         // await cleanInput();
                     }}
-                    className=' bg-blue-bg border-white hover:bg-red-700 text-white font-bold py-2 px-6 border-b-4 border-blue-700 hover:border-white rounded transition duration-300 rounded-full'
+                    className=' bg-blue-bg border-white hover:bg-red-800 text-white font-bold py-2 px-6 border-b-4 border-blue-700 hover:border-white rounded transition duration-300 rounded-full'
                 >
-                    BUSCAR
+                    SEARCH
                 </button>
             </div>
-            <div>
+            <div className='flex justify-center '>
                 {filteredCrypto.map((data, index) => (
                     <section
                         key={index}
-                        className='flex align-center justify-center pt-10'
+                        className='flex align-center justify-center py-2 px-5 my-5 max-w-xs text-xl bg-gradient-to-b from-blue-bg to-violet-bg rounded-xl border-2'
                     >
                         <p>
                             {data.symbol}
                         </p>
-                        <p className='px-10'>
+                        <p className='px-5'>
                             {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: data.askPrice % 1 !== 0 & data.askPrice < cero ? 6 : 2 }).format(data.askPrice)}
                         </p>
                         <p
