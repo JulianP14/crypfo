@@ -3,16 +3,17 @@ import Image from 'next/image'
 
 const Main2 = () => {
     return (
-        <section className='px-10'>
+        <section className='px-5 sm:px-10' id='us'>
             <div className='text-center font-bold text-3xl pt-10 flex justify-center pt-20'>
-                <h1 className='w-1/3 rounded-full text-white p-1 mb-10'>
+                <h1 className='w-full sm:w-1/3 rounded-full text-white p-1 mb-10'>
                     WHY CHOOSE US:
                 </h1>
             </div>
-            <section className='flex justify-evenly px-20'>
-                <div className='max-w-md'>
-                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
-                        <div className='mx-5'>
+            <section className='sm:grid-cols-1 grid lg:grid-cols-3 gap-8 justify-center justify-items-center items-center '>
+                <div className='max-w-md mb-5'>
+
+                    <div className='border-2 border-slate-400 flex rounded-xl py-10 bg-cards-bg my-8'>
+                        <div className='mx-5 max-w-[100px] min-w-[40px]'>
                             <Image
                                 src={'/images/trading.svg'}
                                 alt='wallet img'
@@ -21,8 +22,8 @@ const Main2 = () => {
                                 className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
                             />
                         </div>
-                        <div className='pr-1'>
-                            <h3 className='text-3xl uppercase'>
+                        <div className='pr-1 col-span-2'>
+                            <h3 className='text-2xl sm:text-3xl uppercase'>
                                 Watch The Market
                             </h3>
                             <p>
@@ -31,8 +32,8 @@ const Main2 = () => {
                         </div>
                     </div>
 
-                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
-                        <div className='mx-5'>
+                    <div className='border-2 border-slate-400 flex rounded-xl py-10 bg-cards-bg my-8'>
+                        <div className='mx-5 max-w-[100px] min-w-[50px]'>
                             <Image
                                 src={'/images/search.svg'}
                                 alt='wallet img'
@@ -42,7 +43,7 @@ const Main2 = () => {
                             />
                         </div>
                         <div className='pr-1'>
-                            <h3 className='text-3xl uppercase'>
+                            <h3 className='text-2xl sm:text-3xl uppercase'>
                                 Search Cryptos
                             </h3>
                             <p>
@@ -51,28 +52,31 @@ const Main2 = () => {
                         </div>
                     </div>
 
-                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
-                        <div className='mx-5'>
+                    <div className='border-2 border-slate-400 flex rounded-xl py-10 bg-cards-bg my-8'>
+                        <div className='mx-5 max-w-[80px] min-w-[50px]'>
                             <Image
                                 src={'/images/token.svg'}
                                 alt='wallet img'
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                                 className='bg-gradient-to-r from-blue-bg to-fuchsia-500 rounded-full p-2'
                             />
                         </div>
                         <div className='pr-1'>
-                            <h3 className='text-3xl uppercase'>
-                                Reliable Information
+                            <h3 className='text-2xl sm:text-3xl uppercase'>
+                                Reliable Data
                             </h3>
                             <p>
-                                The data used is provided by the biggest cryptocurrencies broker. Any information display is %100 valid
+                                The data displayed here is provided by the biggest broker in the world.
                             </p>
                         </div>
                     </div>
+
+
+
                 </div>
 
-                <div className='flex items-center' >
+                <div className='flex items-center justify-center sm:justify-center mb-5'>
                     <Image
                         src={'/images/handcrypto.png'}
                         alt='logo'
@@ -82,10 +86,9 @@ const Main2 = () => {
                     />
                 </div>
 
-                <div className='max-w-md'>
-
-                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
-                        <div className='mx-5'>
+                <div className='max-w-md mb-5'>
+                    <div className='border-2 border-slate-400 flex rounded-xl py-10 bg-cards-bg'>
+                        <div className='mx-5 max-w-[100px] min-w-[50px]'>
                             <Image
                                 src={'/images/account.svg'}
                                 alt='wallet img'
@@ -95,7 +98,7 @@ const Main2 = () => {
                             />
                         </div>
                         <div className='pr-1'>
-                            <h3 className='text-3xl uppercase'>
+                            <h3 className='text-2xl sm:text-3xl uppercase'>
                                 Log-in
                             </h3>
                             <p>
@@ -104,8 +107,8 @@ const Main2 = () => {
                         </div>
                     </div>
 
-                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
-                        <div className='mx-5'>
+                    <div className='border-2 border-slate-400 flex rounded-xl py-10 bg-cards-bg my-8'>
+                        <div className='mx-5 max-w-[100px] min-w-[50px]' >
                             <Image
                                 src={'/images/wallet.svg'}
                                 alt='wallet img'
@@ -115,17 +118,16 @@ const Main2 = () => {
                             />
                         </div>
                         <div className='pr-1'>
-                            <h3 className='text-3xl uppercase'>
+                            <h3 className='text-2xl sm:text-3xl uppercase'>
                                 Buy and Sell
                             </h3>
                             <p>
-                                Soon we will launch our own broker APP exclusively for registered accounts.
+                                Crypfo APP is aimed to buy and sell Cryptos, exclusively for registered members.
                             </p>
                         </div>
                     </div>
-
-                    <div className='border-2 border-slate-400 flex rounded-xl mb-5 py-10 bg-cards-bg'>
-                        <div className='mx-5'>
+                    <div className='border-2 border-slate-400 flex rounded-xl py-10 bg-cards-bg'>
+                        <div className='mx-5 max-w-[100px] min-w-[50px]'>
                             <Image
                                 src={'/images/message.svg'}
                                 alt='wallet img'
@@ -135,15 +137,14 @@ const Main2 = () => {
                             />
                         </div>
                         <div className='pr-1'>
-                            <h3 className='text-3xl uppercase'>
-                                Comment & Discuss
+                            <h3 className='text-2xl sm:text-3xl uppercase'>
+                                Join the Discussion
                             </h3>
                             <p>
                                 Join the Crypfo community and discuss, talk and have a good time while you are around.
                             </p>
                         </div>
                     </div>
-
                 </div>
             </section>
         </section>
