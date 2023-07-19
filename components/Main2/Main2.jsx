@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const Main2 = () => {
     return (
-        <section className='px-5 sm:px-10' id='us'>
-            <div className='text-center font-bold text-3xl pt-10 flex justify-center pt-20'>
-                <h1 className='w-full sm:w-1/3 rounded-full text-white p-1 mb-10'>
+        <section className='px-5 sm:px-10' id='chooseus'>
+            <div className='text-center font-bold text-3xl flex justify-center pt-20'>
+                <h1 className='w-full rounded-full text-white p-1 mb-10'>
                     WHY CHOOSE US:
                 </h1>
             </div>
