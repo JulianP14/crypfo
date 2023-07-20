@@ -37,19 +37,20 @@ const NavbarDesktop = () => {
 
     return (
         <>
-            <nav className=' p-5 flex justify-between font-bold text-xl uppercase text-white sticky top-0 bg-blue-bg pb-5 border-b-2'>
-                <section className='text-2xl bg-gradient-to-r from-red-700 to-blue-700 text-transparent bg-clip-text '>
+            <nav className=' z-10 p-5 flex justify-between font-bold text-xl uppercase text-white sticky top-0 bg-blue-bg pb-5'>
+                <section className='text-2xl bg-gradient-to-r from-red-700 to-blue-700 text-transparent bg-clip-text flex items-center'>
                     Crypfo
-                    {/* <Image 
-                    src={'/images/bitcoin-btc-logo.svg'} 
-                    width={20}
-                    height={20}
-                    alt='bitcoinlogo'
-                /> */}
+                    <Image 
+                    src={'/images/crypfologo.svg'} 
+                    width={40}
+                    height={40}
+                    alt='crypfo logo'
+                    className='ml-2'
+                />
                 </section>
                 <ul className='hidden md:flex'>
                     {links.map(({ id, to, label }) => (
-                        <li className='pl-10 pt-1 text-white  hover:text-red-500 transition duration-300 cursor-pointer hover:scale-105' key={id}>
+                        <li className='ml-10 pt-2 text-white  hover:text-red-500 transition duration-300 cursor-pointer hover:scale-105' key={id}>
                             <Link to={to} smooth duration={500}>
                                 {label}
                             </Link>
@@ -80,7 +81,7 @@ const NavbarDesktop = () => {
                         ))}
                     </ul>
                 )}
-            </nav >
+            </nav>
         </>
     )
 }

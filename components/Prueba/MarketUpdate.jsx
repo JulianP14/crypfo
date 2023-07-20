@@ -2,14 +2,17 @@ import React from 'react'
 
 const MarketUpdate = () => {
     return (
-        <>
-            <div className='flex justify-around border-2 bg-blue-bg xl:mx-64 lg:mx-52 md:mx-30 sm:mx-20 pt-3 pb-3 mt-5 rounded-xl bg-gradient-to-r from-blue-bg to-violet-bg' id='market'>
+        <section className='flex flex-col items-center pt-3 mx-8 xl:px-64 lg:px-52 md:px-30 sm:px-20'>
+            <div 
+                className='w-full flex flex-wrap justify-around items-center py-4 border-2 xl:max-w-3xl bg-blue-bg mt-5 mx-8 rounded-xl bg-gradient-to-r from-blue-bg to-violet-bg' 
+                id='market'
+            >
                 <p>Coin</p>
-                <p className='pl-12'>Price</p>
-                <p className='pl-5'>24hs Change</p>
+                <p className='lg:pl-12'>Price</p>
+                <p className='lg:pl-5'>24hs Change</p>
                 <p>Total $ in Binance</p>
             </div>
-        </>
+        </section>
     )
 }
 

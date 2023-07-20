@@ -18,11 +18,11 @@ const CryptoSearch = () => {
         const resp = await binance.json();
         setCriptos(resp);
 
-        const filteredCriptos = criptos.filter((element) => element.symbol === `${searchValue.toUpperCase()}USDT`);
+        const filteredCriptos = resp.filter((element) => element.symbol === `${searchValue.toUpperCase()}USDT`);
 
         filteredCriptos.length == 0 && MySwal.fire({
             title: <p>Error: <hr /></p>,
-            text: "La Criptomoneda ingresada es incorrecta.",
+            text: "The Cryptocurrency is not valid.",
             icon: 'error',
         })
 
@@ -36,16 +36,16 @@ const CryptoSearch = () => {
     let cero = 0.01
 
     return (
-        <>
-            <div className='flex flex-col items-center mt-10' id='search'>
-                <h2 className='text-3xl'>
+        <section className=' mt-10' name='search' id='search' >
+            <div className='flex flex-col items-center py-2' >
+                <h2 className='text-3xl py-2'>
                     SEARCH CRYPTOS
                 </h2>
-                <p className='text-center'>
+                <p className='text-center text-lg py-2 px-4'>
                     If the Crypto you are looking for is not in the list, try searching it down below.
                 </p>
             </div>
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center mt-5'>
                 <input
                     type='text'
                     onChange={(e) => {
@@ -58,7 +58,7 @@ const CryptoSearch = () => {
                     onClick={() => {
                         dataBinances();
                     }}
-                    className='bg-blue-bg border-white hover:bg-red-800 text-white font-bold mt-2 py-2 px-6 rounded-full'
+                    className='bg-blue-bg hover:bg-red-800 text-white font-bold my-2 ml-2 h-full py-2 px-6 rounded-full duration-300 border-gray-500 border-2'
                 >
                     SEARCH
                 </button>
@@ -81,7 +81,7 @@ const CryptoSearch = () => {
                     </section>
                 ))}
             </div>
-        </>
+        </section>
     );
 };
 export default CryptoSearch
