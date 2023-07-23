@@ -1,10 +1,10 @@
 import CryptoSearch from '@/components/CryptoSearch/CryptoSearch'
+import Footer from '@/components/Footer/Footer'
 import HomeSite from '@/components/HomeSite/HomeSite'
 import Main1 from '@/components/Main1.jsx/Main1'
 import Main2 from '@/components/Main2/Main2'
 import Navbar from '@/components/Navbar/Navbar'
 import Prueba from '@/components/Prueba/prueba'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <Prueba />
       <CryptoSearch />
       <Main2 />
+
     </main>
   )
 }
