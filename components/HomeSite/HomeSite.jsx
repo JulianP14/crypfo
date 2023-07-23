@@ -23,13 +23,13 @@ const HomeSite = () => {
                     className='animate-bounce w-50 h-20'
                 />
             </div>
-            <div className='flex justify-center items-center w-full pb-10 '>
+            <div className='flex justify-center items-center w-full pb-56 '>
                 <Image
                     src={crypto1}
                     width='100%'
                     height={500}
                     alt='bckg'
-                    className='opacity-20 relative z-20'
+                    className='opacity-20 relative'
                 />
                 <div className='absolute'>
                     <h1 className='text-5xl my-4 mx-2 text-center uppercase font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text'>

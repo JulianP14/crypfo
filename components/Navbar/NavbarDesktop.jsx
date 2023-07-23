@@ -40,13 +40,13 @@ const NavbarDesktop = () => {
             <nav className=' z-10 p-5 flex justify-between font-bold text-xl uppercase text-white sticky top-0 bg-blue-bg pb-5'>
                 <section className='text-2xl bg-gradient-to-r from-red-700 to-blue-700 text-transparent bg-clip-text flex items-center'>
                     Crypfo
-                    <Image 
-                    src={'/images/crypfologo.svg'} 
-                    width={40}
-                    height={40}
-                    alt='crypfo logo'
-                    className='ml-2'
-                />
+                    <Image
+                        src={'/images/crypfologo.svg'}
+                        width={40}
+                        height={40}
+                        alt='crypfo logo'
+                        className='ml-2'
+                    />
                 </section>
                 <ul className='hidden md:flex'>
                     {links.map(({ id, to, label }) => (
@@ -60,7 +60,7 @@ const NavbarDesktop = () => {
                 </ul>
                 <div
                     onClick={() => setNav(!nav)}
-                    className='cursor-pointer z-10 md:hidden bg-violet-bg hover:bg-red-500 duration-300 rounded-xl p-2'
+                    className='cursor-pointer md:hidden bg-violet-bg hover:bg-cyan-500 duration-300 rounded-xl p-2 z-20'
                 >
                     {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
                 </div>
@@ -81,6 +81,7 @@ const NavbarDesktop = () => {
                         ))}
                     </ul>
                 )}
+
             </nav>
         </>
     )
