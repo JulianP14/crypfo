@@ -1,5 +1,4 @@
 import CryptoSearch from '@/components/CryptoSearch/CryptoSearch'
-import Footer from '@/components/Footer/Footer'
 import HomeSite from '@/components/HomeSite/HomeSite'
 import Main1 from '@/components/Main1.jsx/Main1'
 import Main2 from '@/components/Main2/Main2'
