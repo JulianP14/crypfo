@@ -53,12 +53,14 @@ const CryptoSearch = () => {
                     }}
                     value={searchValue}
                     className='text-black rounded-full py-2 px-4'
+                    placeholder="Enter the crypto's ticker"
                 />
                 <button
                     onClick={() => {
                         dataBinances();
                     }}
                     className='bg-blue-bg hover:bg-pink-600  text-white font-bold my-2 ml-2 h-full py-2 px-6 rounded-full duration-300 border-gray-500 border-2'
+                    
                 >
                     SEARCH
                 </button>
