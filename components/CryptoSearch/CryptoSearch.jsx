@@ -36,7 +36,7 @@ const CryptoSearch = () => {
     let cero = 0.01
 
     return (
-        <section className=' mt-10' name='search' id='search' >
+        <section className=' mt-10 h-screen flex flex-col justify-center md:h-auto' name='search' id='search' >
             <div className='flex flex-col items-center py-2' >
                 <h2 className='text-3xl py-2'>
                     SEARCH CRYPTOS
