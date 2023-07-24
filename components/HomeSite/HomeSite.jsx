@@ -32,10 +32,10 @@ const HomeSite = () => {
                     className='opacity-20 relative'
                 />
                 <div className='absolute'>
-                    <h1 className='text-5xl my-4 mx-2 text-center uppercase font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text'>
+                    <h1 className=' text-4xl sm:text-5xl my-4 mx-2 text-center uppercase font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text'>
                         Discover the Crypfo Universe:
                     </h1>
-                    <h2 className=' text-4xl my-4 mx-2 text-center uppercase font-bold bg-gradient-to-r from-cyan-300 to-pink-600  text-transparent bg-clip-text'>
+                    <h2 className=' text-3xl sm:text-4xl my-4 mx-2 text-center uppercase font-bold bg-gradient-to-r from-cyan-300 to-pink-600  text-transparent bg-clip-text'>
                         Real-Time Prices and Trends
                     </h2>
 

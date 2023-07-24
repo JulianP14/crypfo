@@ -38,7 +38,7 @@ const Prueba = () => {
     return (
         <>
             <MarketUpdate />
-            <div className='flex flex-col items-center pt-3 mx-8 xl:px-64 lg:px-52 md:px-30 sm:px-20 '>
+            <div className='flex flex-col items-center pt-3 mx-12 xl:px-64 lg:px-52 md:px-30 sm:px-20 '>
                 {criptos.map((cripto, index) => (
                     <section key={index} className='w-full flex flex-wrap justify-around items-center py-4 border-b-2 xl:max-w-3xl'>
                         <Image

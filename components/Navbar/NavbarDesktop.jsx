@@ -37,7 +37,7 @@ const NavbarDesktop = () => {
 
     return (
         <>
-            <nav className=' z-10 p-5 flex justify-between font-bold text-xl uppercase text-white sticky top-0 bg-blue-bg pb-5'>
+            <nav className=' z-10 p-5 flex justify-between font-bold text-xl uppercase text-white sticky top-0 bg-blue-bg pr-10'>
                 <section className='text-2xl bg-gradient-to-r from-red-700 to-blue-700 text-transparent bg-clip-text flex items-center'>
                     Crypfo
                     <Image

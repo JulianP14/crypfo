@@ -45,7 +45,7 @@ const CryptoSearch = () => {
                     If the Crypto you are looking for is not in the list, try searching it down below.
                 </p>
             </div>
-            <div className='flex justify-center mt-5'>
+            <div className=' flex flex-col items-center sm:flex-row justify-center mt-5'>
                 <input
                     type='text'
                     onChange={(e) => {
