@@ -23,7 +23,7 @@ const Main2 = () => {
                             />
                         </div>
                         <div className='pr-1 col-span-2'>
-                            <h3 className='text-2xl sm:text-3xl uppercase'>
+                            <h3 className='text-2xl sm:text-3xl uppercase text-white'>
                                 Watch The Market
                             </h3>
                             <p>
