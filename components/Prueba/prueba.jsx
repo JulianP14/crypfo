@@ -40,15 +40,15 @@ const Prueba = () => {
             <MarketUpdate />
             <div className='flex flex-col items-center pt-3 mx-12 xl:px-64 lg:px-52 md:px-30 sm:px-20 '>
                 {criptos.map((cripto, index) => (
-                    <section key={index} className='w-full flex flex-wrap justify-around items-center py-4 border-b-2 xl:max-w-3xl'>
+                    <section key={index} className='w-full flex flex-wrap justify-around items-center py-4 border-b-2 text-xs sm:text-sm xl:max-w-3xl'>
                         <Image
                             src={`/images/${cripto.symbol}.svg`}
                             alt={`${cripto.symbol}`}
                             width={50}
                             height={50}
-                            className='bg-white rounded-full p-1'
+                            className='bg-white rounded-full p-1 w-8'
                         />
-                        <p className='p-5'>
+                        <p className=' sm:p-5'>
                             {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(cripto.askPrice)}
                         </p>
                         <p className={getPriceChangeClass(cripto.priceChangePercent)}>

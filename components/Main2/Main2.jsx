@@ -26,7 +26,7 @@ const Main2 = () => {
                             <h3 className='text-2xl sm:text-3xl uppercase text-white'>
                                 Watch The Market
                             </h3>
-                            <p>
+                            <p className='text-white'>
                                 Watch the price from the 10 most important crypto coins directly from the biggest broker.
                             </p>
                         </div>
@@ -43,10 +43,10 @@ const Main2 = () => {
                             />
                         </div>
                         <div className='pr-1'>
-                            <h3 className='text-2xl sm:text-3xl uppercase'>
+                            <h3 className='text-2xl sm:text-3xl uppercase text-white'>
                                 Search Cryptos
                             </h3>
-                            <p>
+                            <p className='text-white'>
                                 If you want to look for another Crypto that is not in the main list, you can search it above.
                             </p>
                         </div>
